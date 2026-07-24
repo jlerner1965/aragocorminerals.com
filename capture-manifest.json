@@ -1,0 +1,475 @@
+{
+  "source": "https://aragocor-minerals.jlerner1965.chatgpt.site/",
+  "captured_utc": "2026-07-24T19:13:52Z",
+  "homepage_validation": "Natural oolitic aragonite, sized to your process.",
+  "files_downloaded": 47,
+  "html_pages": [
+    "about.html",
+    "contact.html",
+    "index.html",
+    "industries.html",
+    "privacy.html",
+    "science.html",
+    "terms.html",
+    "whitepaper-aragonite-vs-limestone.html",
+    "whitepaper-glass-batch-chemistry.html"
+  ],
+  "image_assets": [
+    "images/about-bahamas-origin.jpg",
+    "images/agriculture-soil.jpg",
+    "images/aragocor-logo.png",
+    "images/aragonite-macro.jpg",
+    "images/aragosan-logo.png",
+    "images/bahamas-ocean-poster.jpg",
+    "images/contact-droplet.jpg",
+    "images/favicon.ico",
+    "images/glass-furnace.jpg",
+    "images/home-bahamas-shallows-poster.jpg",
+    "images/industries-platform.jpg",
+    "images/industry-animal-feed.jpg",
+    "images/industry-aquaculture.jpg",
+    "images/industry-battery.jpg",
+    "images/industry-carbon-capture.jpg",
+    "images/industry-construction.jpg",
+    "images/industry-emerging.jpg",
+    "images/industry-environmental.jpg",
+    "images/industry-paint.jpg",
+    "images/industry-plastics.jpg",
+    "images/industry-turf.jpg",
+    "images/industry-wastewater.jpg",
+    "images/process-harvest.jpg",
+    "images/process-qc.jpg",
+    "images/water-droplet.jpg"
+  ],
+  "video_assets": [
+    "videos/bahamas-ocean-drone.mp4",
+    "videos/home-bahamas-shallows-720.mp4",
+    "videos/home-bahamas-shallows.mp4"
+  ],
+  "failures": [],
+  "files": [
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/about.html",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/about",
+      "path": "about.html",
+      "status": 200,
+      "content_type": "text/html",
+      "size_bytes": 18530,
+      "sha256": "7fc3e1fe94d37d1d2f180dc9701ece13709f314e9edc8e080fe3aa4469ed10f3"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/contact.html?type=sample",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/contact?type=sample",
+      "path": "contact.html",
+      "status": 200,
+      "content_type": "text/html",
+      "size_bytes": 10070,
+      "sha256": "058067b9c6138bac50eb8b6b57842b2735d45a0bd18ae5cd0d537ba31bced36c"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/contact.html",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/contact",
+      "path": "contact.html",
+      "status": 200,
+      "content_type": "text/html",
+      "size_bytes": 10070,
+      "sha256": "3010144e4bc9cc6b6aca5dd1b5baf164fed383c61078da3eb24d5f30570b4d54"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/contact.html?type=download",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/contact?type=download",
+      "path": "contact.html",
+      "status": 200,
+      "content_type": "text/html",
+      "size_bytes": 10070,
+      "sha256": "9788b722ff6af5c06b1409c366b4b075284a2b40aacd43dae98e01e54cfb5571"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/doc-page.js",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/doc-page.js",
+      "path": "doc-page.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "size_bytes": 21014,
+      "sha256": "f106e1b77ea0c99ae26489ed9b394ce7f0e6bac3560d536027a5200f6490f88a"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/about-bahamas-origin.jpg",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/about-bahamas-origin.jpg",
+      "path": "images/about-bahamas-origin.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "size_bytes": 230082,
+      "sha256": "0898356a70d5648038fa495d04b0a71a008da7aa8ad7b69365dcdc08b84c6c2c"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/agriculture-soil.jpg",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/agriculture-soil.jpg",
+      "path": "images/agriculture-soil.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "size_bytes": 285490,
+      "sha256": "20147689a95a236eed6897c7243a884ac251d0e255a880824430dbfd1f43ec56"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/aragocor-logo.png",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/aragocor-logo.png",
+      "path": "images/aragocor-logo.png",
+      "status": 200,
+      "content_type": "image/png",
+      "size_bytes": 49955,
+      "sha256": "7217b4ed58540694afedd03f431ca7febdd1398f90f53d4024c86a70ca13ca50"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/aragonite-macro.jpg",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/aragonite-macro.jpg",
+      "path": "images/aragonite-macro.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "size_bytes": 152338,
+      "sha256": "3a32fd2035f4f9c4f33bf3dbefe74a22c0e87ef7dca96aa16ee5b083e6227970"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/aragosan-logo.png",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/aragosan-logo.png",
+      "path": "images/aragosan-logo.png",
+      "status": 200,
+      "content_type": "image/png",
+      "size_bytes": 342237,
+      "sha256": "62db5540908dd340f7979c12a0cf8db9d7a740ecb3bf49851c7291841e6f7c34"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/bahamas-ocean-poster.jpg",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/bahamas-ocean-poster.jpg",
+      "path": "images/bahamas-ocean-poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "size_bytes": 132971,
+      "sha256": "b2b43384451815a9e310f639a71b498cb956526100cc8daac631af2b6095dbfc"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/contact-droplet.jpg",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/contact-droplet.jpg",
+      "path": "images/contact-droplet.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "size_bytes": 118150,
+      "sha256": "da9a3c21ebceea4c88350bad0ef340ab9c2f0ee96628642cca83db7330089797"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/favicon.ico",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/favicon.ico",
+      "path": "images/favicon.ico",
+      "status": 200,
+      "content_type": "image/vnd.microsoft.icon",
+      "size_bytes": 20373,
+      "sha256": "dd821076a9b03adc2173c93956226aea3d92482d7578fc4339c5d3a2e9c24586"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/glass-furnace.jpg",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/glass-furnace.jpg",
+      "path": "images/glass-furnace.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "size_bytes": 199915,
+      "sha256": "5a7d150bede80a64b9f53043ddbd4076e6ab2405aa6554a7acf4f5dd61917f16"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/home-bahamas-shallows-poster.jpg",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/home-bahamas-shallows-poster.jpg",
+      "path": "images/home-bahamas-shallows-poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "size_bytes": 178366,
+      "sha256": "3bfa7f2cbf53f36c80a43bde75c935d8e119ebf77704770ebacc1ee631e377bf"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/industries-platform.jpg",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/industries-platform.jpg",
+      "path": "images/industries-platform.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "size_bytes": 178909,
+      "sha256": "37a7d7c9b5994de2683517598d849a6409985ae1d23a864003b55e4d2c5ba8bb"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/industry-animal-feed.jpg",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/industry-animal-feed.jpg",
+      "path": "images/industry-animal-feed.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "size_bytes": 83036,
+      "sha256": "e1a64d00d6641d9ec0551a9d16ce688632a51a8ed7acef82918819713c2695c9"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/industry-aquaculture.jpg",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/industry-aquaculture.jpg",
+      "path": "images/industry-aquaculture.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "size_bytes": 112433,
+      "sha256": "bfcb0d440cb5c9eadd773fab52f1956ff5f767dbad8a7a7a36e9e642b3f4ec4d"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/industry-battery.jpg",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/industry-battery.jpg",
+      "path": "images/industry-battery.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "size_bytes": 61049,
+      "sha256": "2a99c6b52f1ebc7dc584cdb8f06fa78ac7ad6001152df934b601bffd450cfbef"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/industry-carbon-capture.jpg",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/industry-carbon-capture.jpg",
+      "path": "images/industry-carbon-capture.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "size_bytes": 90300,
+      "sha256": "851c48c39e0c54e0f1e766ff31bcf792e9a91fc0c02dfcf207646c447080b3f9"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/industry-construction.jpg",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/industry-construction.jpg",
+      "path": "images/industry-construction.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "size_bytes": 171105,
+      "sha256": "304d854d0545f96ffd93f3c634c578ed903dbb9243bddab726859f6d5709e313"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/industry-emerging.jpg",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/industry-emerging.jpg",
+      "path": "images/industry-emerging.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "size_bytes": 79679,
+      "sha256": "3bb0d53f3285870efd15d0a2b7881997ac15940b21607da361329de2b8f6ce71"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/industry-environmental.jpg",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/industry-environmental.jpg",
+      "path": "images/industry-environmental.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "size_bytes": 227142,
+      "sha256": "4d213354004628be1732d27618ff68683ec825995b8ef866b932557de43ee3c2"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/industry-paint.jpg",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/industry-paint.jpg",
+      "path": "images/industry-paint.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "size_bytes": 99235,
+      "sha256": "24ff164f807384b17f0a3091df22cfdfa705db57a8b430c5457125bd8150b9ac"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/industry-plastics.jpg",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/industry-plastics.jpg",
+      "path": "images/industry-plastics.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "size_bytes": 152146,
+      "sha256": "639f8ab5a4afb75e26f74c510649b172a21411199958cd80d758c63e699d0c11"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/industry-turf.jpg",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/industry-turf.jpg",
+      "path": "images/industry-turf.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "size_bytes": 237480,
+      "sha256": "d5d2387000b48d6200c61035ae890e66afc434dc67a6f55ed1d5819dad78ebd6"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/industry-wastewater.jpg",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/industry-wastewater.jpg",
+      "path": "images/industry-wastewater.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "size_bytes": 150411,
+      "sha256": "0ea5c44eac26762513351182fa88fa3e040bb13fb6d3ba9faea86b6d6ee2a0ec"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/process-harvest.jpg",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/process-harvest.jpg",
+      "path": "images/process-harvest.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "size_bytes": 123957,
+      "sha256": "c7499d3f92f10c449c19c7b0e44bdedc93d78f8ab600ba761eed781bd353cc33"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/process-qc.jpg",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/process-qc.jpg",
+      "path": "images/process-qc.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "size_bytes": 159651,
+      "sha256": "37dddb55b915009160e58713298138362f3cf1976801dd967a24bdf5188cb156"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/water-droplet.jpg",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/images/water-droplet.jpg",
+      "path": "images/water-droplet.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "size_bytes": 126718,
+      "sha256": "62e61f88139cc5890ad7269439c00f98e2c13fcd636556cfefb760ae6423c0a6"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/",
+      "path": "index.html",
+      "status": 200,
+      "content_type": "text/html",
+      "size_bytes": 21764,
+      "sha256": "8715abe1dd082802fd9ff2df633c0ba05dbf6a8ed963f04c72946c8873f094dd"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/index.html",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/",
+      "path": "index.html",
+      "status": 200,
+      "content_type": "text/html",
+      "size_bytes": 21764,
+      "sha256": "3545286b2571e007efd5ba78a61e73b842adf3fb5c6844b4722da9af3c7324d7"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/industries.html",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/industries",
+      "path": "industries.html",
+      "status": 200,
+      "content_type": "text/html",
+      "size_bytes": 38322,
+      "sha256": "7de3d1208f062d8356bc679afde7f236474736840e46a167054a0b68bb8ef1b8"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/privacy.html",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/privacy",
+      "path": "privacy.html",
+      "status": 200,
+      "content_type": "text/html",
+      "size_bytes": 5917,
+      "sha256": "eb48ba033aa22ebcdc5667b0d6124f3fb899fb6d1c47245414d8896961aaff1a"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/resources/aragonite-vs-limestone-technical-brief.pdf",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/resources/aragonite-vs-limestone-technical-brief.pdf",
+      "path": "resources/aragonite-vs-limestone-technical-brief.pdf",
+      "status": 200,
+      "content_type": "application/pdf",
+      "size_bytes": 69916,
+      "sha256": "8b9b655d2b9cc9d38332419c4e32e32da087b9efbfe42b074312579d9ab45055"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/resources/glass-batch-chemistry-with-aragonite.pdf",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/resources/glass-batch-chemistry-with-aragonite.pdf",
+      "path": "resources/glass-batch-chemistry-with-aragonite.pdf",
+      "status": 200,
+      "content_type": "application/pdf",
+      "size_bytes": 69793,
+      "sha256": "3d829ca1fd1747ff26f1143a161a70b38777c8cfb8bae13b851950587dfdd7e9"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/robots.txt",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/robots.txt",
+      "path": "robots.txt",
+      "status": 200,
+      "content_type": "text/plain",
+      "size_bytes": 74,
+      "sha256": "0e79c374bf903cb9115d6c92dcaaf0590636bbaddbdaaae0f2d1283eea5f7a7d"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/science.html",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/science",
+      "path": "science.html",
+      "status": 200,
+      "content_type": "text/html",
+      "size_bytes": 44358,
+      "sha256": "079087ae13359d6bafe8ca0e412a748e36173c23e8cc1cc86fdac6b8a8c69719"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/script.js",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/script.js",
+      "path": "script.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "size_bytes": 20331,
+      "sha256": "88ab04841237f477d8fca49394a703378f07b4448c17d833adacc27dc6296c8c"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/sitemap.xml",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/sitemap.xml",
+      "path": "sitemap.xml",
+      "status": 200,
+      "content_type": "text/xml",
+      "size_bytes": 1550,
+      "sha256": "7eb5dbe5a0d11439047ccf44cdbde34ab63d9b36907cb9cb202bd788bad27cd7"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/styles.css",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/styles.css",
+      "path": "styles.css",
+      "status": 200,
+      "content_type": "text/css",
+      "size_bytes": 76948,
+      "sha256": "84fd1aebb515ad3a926f3605017f1fea1c8ec836e678ead5d47c6f15a3b5a088"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/terms.html",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/terms",
+      "path": "terms.html",
+      "status": 200,
+      "content_type": "text/html",
+      "size_bytes": 4950,
+      "sha256": "160a34e0b01ae49a43a129b8458a0238b39f341096fa644c827920e44d545dc9"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/videos/bahamas-ocean-drone.mp4",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/videos/bahamas-ocean-drone.mp4",
+      "path": "videos/bahamas-ocean-drone.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "size_bytes": 3724944,
+      "sha256": "b8e6893cea8fb50b9a72baf7922bcf129d71a64e7c53c5f81c08a141e54f84c9"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/videos/home-bahamas-shallows-720.mp4",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/videos/home-bahamas-shallows-720.mp4",
+      "path": "videos/home-bahamas-shallows-720.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "size_bytes": 3458507,
+      "sha256": "85c2a9cb20eac7ce6f122cd1cb604a6b8749fa71bba4e7c6fb0a046fe581ff8f"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/videos/home-bahamas-shallows.mp4",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/videos/home-bahamas-shallows.mp4",
+      "path": "videos/home-bahamas-shallows.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "size_bytes": 7135340,
+      "sha256": "a9c008b7cb23ba5dbac2533e8290842473043cf27300f46d3efc84b6aad39a4d"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/whitepaper-aragonite-vs-limestone.html",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/whitepaper-aragonite-vs-limestone",
+      "path": "whitepaper-aragonite-vs-limestone.html",
+      "status": 200,
+      "content_type": "text/html",
+      "size_bytes": 8256,
+      "sha256": "a1f3b65dc4a704254f656e595177341e82d296547bca17c08db701b3a2707a73"
+    },
+    {
+      "url": "https://aragocor-minerals.jlerner1965.chatgpt.site/whitepaper-glass-batch-chemistry.html",
+      "final_url": "https://aragocor-minerals.jlerner1965.chatgpt.site/whitepaper-glass-batch-chemistry",
+      "path": "whitepaper-glass-batch-chemistry.html",
+      "status": 200,
+      "content_type": "text/html",
+      "size_bytes": 8546,
+      "sha256": "48875da187d69b61cc443784b21bcf1db6f62696dd192519a95f4eb4adef5f80"
+    }
+  ]
+}
