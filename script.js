@@ -10,8 +10,7 @@ var NAV = [
   { label:"Science", href:"science.html", children:[
     ["The science","science.html"],
     ["Technical data sheets","science.html#tds"],
-    ["Why aragonite","science.html#why-aragonite"],
-    ["Lifecycle strategy","science.html#carbon-negative"]
+    ["Why aragonite","science.html#why-aragonite"]
   ]},
   { label:"Industries", href:"industries.html", children:[
     ["Glass manufacturing","industries.html#glass"],
@@ -92,14 +91,14 @@ function buildFooter(){
   var cols = [
     { title:"Material", links:[
       ["Science","science.html"],["Why Aragonite","science.html#why-aragonite"],
-      ["Lifecycle Strategy","science.html#carbon-negative"],["The Bahamas Origin","about.html#origin"]]},
+      ["The Bahamas Origin","about.html#origin"]]},
     { title:"Industries", links:[
       ["Glass Manufacturing","industries.html#glass"],["Agriculture","industries.html#agriculture"],
       ["Water Treatment","industries.html#water-treatment"],["Polymers","industries.html#plastics"],
       ["Construction","industries.html#construction"],["All Industries","industries.html"]]},
     { title:"Technical", links:[
       ["The Science","science.html"],["Technical Data Sheets","science.html#tds"],
-      ["Aragonite vs Limestone","science.html#why-aragonite"],["Lifecycle Strategy","science.html#carbon-negative"]]},
+      ["Aragonite vs Limestone","science.html#why-aragonite"]]},
     { title:"Company", links:[
       ["About","about.html"],["Contact","contact.html"],
       ["Request Sample","contact.html?type=sample"]]}
