@@ -127,8 +127,7 @@ function buildFooter(){
           '<p>AragoCor Minerals supplies high-purity natural oolitic aragonite for technical evaluation and industrial applications.</p>'+
           '<ul class="footer-contact">'+
             '<li>'+ICON.pin+' Stockton, California, United States</li>'+
-            '<li>'+ICON.phone+' <a href="tel:+12094870110">+1 (209) 487-0110</a></li>'+
-            '<li>'+ICON.mail+' <a href="mailto:info@aragocorminerals.com">info@aragocorminerals.com</a></li>'+
+            '<li>'+ICON.mail+' <a href="mailto:sales@aragocorminerals.com">sales@aragocorminerals.com</a></li>'+
             '<li>'+ICON.globe+' <a href="https://www.aragocorminerals.com">www.aragocorminerals.com</a></li>'+
           '</ul>'+
         '</div>'+
@@ -139,6 +138,7 @@ function buildFooter(){
         '<p>© <span id="yr"></span> AragoCor Minerals LLC. High-purity natural oolitic aragonite calcium carbonate.</p>'+
         '<p style="display:flex;gap:1.25rem;flex-wrap:wrap"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="contact.html">Contact</a></p>'+
       '</div>'+
+      '<p class="footer-disclaimer" style="margin-top:1.25rem;font-size:.75rem;line-height:1.6;color:hsl(var(--pearl) / 0.5);max-width:60rem">All published figures are representative values for preliminary evaluation only and do not constitute a warranty or a lot-specific certificate of analysis. Confirm current specifications and lot documentation before procurement.</p>'+
     '</div>'+
     '<a href="#top" class="back-to-top">Back to top '+ICON.arrowUp+'</a>'+
   '</footer>';

@@ -143,6 +143,12 @@
       box-sizing: border-box;
       padding: var(--doc-page-margin);
     }
+    @media screen and (max-width: 900px) {
+      :host { min-width: 0; padding: 12px; }
+      .sheet { width: 100%; padding: 24px; }
+      .frame { table-layout: fixed; }
+      .body { overflow-wrap: anywhere; }
+    }
     .frame { width: 100%; border-collapse: collapse; }
     /* Scaled-fit mode (content-width/content-height): the inner .fit box
      * lays the content out at its authored fixed size and scales it onto
