@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/aragocor-minerals-design-system-6cd5605f-b1a2-4c76-af9e-ea4efe576a33/colors_and_type.css">
+<script src="_ds/aragocor-minerals-design-system-6cd5605f-b1a2-4c76-af9e-ea4efe576a33/_ds_bundle.js"></script>
+<style>:root{--ink:#0E3540;--tide:#526A70;--shore:#7C97A0;--sand:#D7C59C;--bone:#F7F4ED;--paper:#FFFFFF;--root:#49613C;--leaf:#49613C;--fg-1:#0E3540;--fg-2:#526A70;--fg-3:#8A9AA0;--border:#C7CBC6;--border-strong:#A9B0AC;--ink-04:rgba(14,53,64,0.04);--ink-08:rgba(14,53,64,0.08);--ink-12:rgba(14,53,64,0.12);--ink-20:rgba(14,53,64,0.20);--ink-40:rgba(14,53,64,0.40);--ink-60:rgba(14,53,64,0.60);--ink-80:rgba(14,53,64,0.80);}</style>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bone); }
+  a { border-bottom: none; }
+  .pcard:hover { box-shadow: var(--shadow-2); border-color: var(--ink-20); }
+  .btn-ar { transition: all 220ms var(--ease-tide); cursor: pointer; }
+  .btn-ar:active { transform: scale(0.97); }
+  .btn-ink:hover { background: var(--tide) !important; }
+  .btn-outline:hover { border-color: var(--ink) !important; background: var(--ink-04) !important; }
+</style>
+</helmet>
+
+<div style="font-family: var(--font-sans); color: var(--ink); background: var(--bone); min-height: 100vh;">
+  <dc-import name="SiteNav" active="products" hint-size="100%,74px"></dc-import>
+
+  <!-- HEADER -->
+  <div style="max-width: 1440px; margin: 0 auto; padding: 88px 40px 48px;">
+    <div style="font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-2);">Product catalog · 2026</div>
+    <h1 style="font-family: var(--font-serif); font-size: 64px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.04; margin: 16px 0 24px; max-width: 900px;">One deposit, graded for every process.</h1>
+    <p style="font-size: 19px; line-height: 1.55; max-width: 680px; color: var(--fg-2); margin: 0;">Bulk and industrial supply by the ton or the container load — the same ocean-formed aragonite, sized and packed to your specification. Sold direct to processors, growers, and blenders; no retail.</p>
+  </div>
+
+  <!-- BULK GRADES -->
+  <div style="max-width: 1440px; margin: 0 auto; padding: 0 40px 40px;">
+    <div style="font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--fg-2); margin-bottom: 20px;">Bulk &amp; industrial supply</div>
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px;">
+      <sc-for list="{{ bulk }}" as="b" hint-placeholder-count="4">
+        <div class="pcard" style="background: var(--ink); border-radius: 8px; padding: 28px; color: var(--bone); position: relative; overflow: hidden; transition: box-shadow 220ms var(--ease-tide);">
+          <div style="position: absolute; inset: 0; opacity: 0.4; background: {{ b.glow }};"></div>
+          <div style="position: relative;">
+            <div style="font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; color: rgba(247,244,237,0.6); margin-bottom: 14px;">{{ b.sku }}</div>
+            <h3 style="font-family: var(--font-serif); font-size: 23px; font-weight: 600; letter-spacing: -0.01em; margin: 0 0 10px; color: var(--bone); line-height: 1.15;">{{ b.name }}</h3>
+            <p style="font-size: 13px; line-height: 1.55; color: rgba(247,244,237,0.72); margin: 0 0 20px;">{{ b.body }}</p>
+            <div style="padding-top: 16px; border-top: 1px solid rgba(247,244,237,0.15); display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 12px;">
+              <span style="color: rgba(247,244,237,0.6);">{{ b.size }}</span>
+              <span style="color: var(--shore);">{{ b.pack }}</span>
+            </div>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+
+  <!-- CUSTOM BLENDS -->
+  <div style="max-width: 1440px; margin: 0 auto; padding: 96px 40px;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center;">
+      <div style="aspect-ratio: 4/3; border-radius: 8px; position: relative; overflow: hidden; background: radial-gradient(ellipse at 30% 30%, #7C97A0 0%, #294C57 45%, #0E3540 100%);">
+        <div style="position: absolute; inset: 0; opacity: 0.12; mix-blend-mode: overlay; background-image: repeating-radial-gradient(circle at 0 0, rgba(255,255,255,0.4) 0, rgba(255,255,255,0) 2px); background-size: 3px 3px;"></div>
+      </div>
+      <div>
+        <div style="font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-2);">Custom blends</div>
+        <h2 style="font-family: var(--font-serif); font-size: 40px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.1; margin: 14px 0 20px;">Specified by analysis, packed to plan.</h2>
+        <p style="font-size: 15.5px; line-height: 1.65; color: var(--fg-2); margin: 0 0 28px; max-width: 460px;">Send a soil report or a target spec and we'll formulate, buffer, and pack to your requirement — private-label bagging available for distributors.</p>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <a href="contact.html" class="btn-ar btn-ink" style="background: var(--ink); color: var(--bone); height: 48px; padding: 0 24px; border-radius: 4px; font-size: 15px; font-weight: 500; display: inline-flex; align-items: center; border: none;">Request a quote</a>
+          <a href="resources.html" class="btn-ar btn-outline" style="background: transparent; color: var(--ink); height: 48px; padding: 0 24px; border-radius: 4px; font-size: 15px; font-weight: 500; display: inline-flex; align-items: center; border: 1px solid var(--border-strong);">View specifications</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <dc-import name="SiteFooter" hint-size="100%,440px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      bulk: [
+        { sku: 'AG-CAL', name: 'Agricultural sand-grade', body: 'The workhorse bulk grade for row-crop calcium and pH buffering.', size: '0.2–0.5 mm', pack: 'Ton / bulk', glow: 'radial-gradient(circle at 20% 20%, rgba(107,143,71,0.3), transparent 55%)' },
+        { sku: 'GL-CAL', name: 'Glass batch feed', body: 'High-purity, low-iron carbonate for container and specialty glass.', size: '< 0.1 mm', pack: 'Bulk', glow: 'radial-gradient(circle at 80% 30%, rgba(107,163,181,0.3), transparent 55%)' },
+        { sku: 'WT-CAL', name: 'Water treatment', body: 'Remineralization and pH stabilization media for process water.', size: '1–3 mm', pack: 'Super-sack', glow: 'radial-gradient(circle at 30% 80%, rgba(46,93,110,0.5), transparent 55%)' },
+        { sku: 'PL-CAL', name: 'Functional filler', body: 'Bright, low-abrasion mineral filler for polymers and coatings.', size: 'To spec', pack: 'Bulk / bag', glow: 'radial-gradient(circle at 70% 70%, rgba(201,166,107,0.28), transparent 55%)' },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>

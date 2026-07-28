@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/aragocor-minerals-design-system-6cd5605f-b1a2-4c76-af9e-ea4efe576a33/colors_and_type.css">
+<script src="_ds/aragocor-minerals-design-system-6cd5605f-b1a2-4c76-af9e-ea4efe576a33/_ds_bundle.js"></script>
+<style>:root{--ink:#0E3540;--tide:#526A70;--shore:#7C97A0;--sand:#D7C59C;--bone:#F7F4ED;--paper:#FFFFFF;--root:#49613C;--leaf:#49613C;--fg-1:#0E3540;--fg-2:#526A70;--fg-3:#8A9AA0;--border:#C7CBC6;--border-strong:#A9B0AC;--ink-04:rgba(14,53,64,0.04);--ink-08:rgba(14,53,64,0.08);--ink-12:rgba(14,53,64,0.12);--ink-20:rgba(14,53,64,0.20);--ink-40:rgba(14,53,64,0.40);--ink-60:rgba(14,53,64,0.60);--ink-80:rgba(14,53,64,0.80);}</style>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bone); }
+  a { border-bottom: none; }
+  .btn-ar { transition: all 220ms var(--ease-tide); cursor: pointer; }
+  .btn-ar:active { transform: scale(0.97); }
+  .btn-bone:hover { background: rgba(247,244,237,0.88) !important; }
+  .btn-boneline:hover { border-color: var(--bone) !important; background: rgba(247,244,237,0.08) !important; }
+  .btn-ink:hover { background: var(--tide) !important; }
+</style>
+</helmet>
+
+<div style="font-family: var(--font-sans); color: var(--ink); background: var(--bone); min-height: 100vh;">
+  <dc-import name="SiteNav" active="sustainability" hint-size="100%,74px"></dc-import>
+
+  <!-- HERO -->
+  <div style="position: relative; height: 560px; overflow: hidden; background: url('assets/carbon-vitality.jpg') center/cover;">
+    <div style="position: absolute; inset: 0; opacity: 0.1; mix-blend-mode: overlay; background-image: repeating-radial-gradient(circle at 0 0, rgba(255,255,255,0.4) 0, rgba(255,255,255,0) 2px); background-size: 3px 3px;"></div>
+    <div style="position: absolute; inset: 0; background: linear-gradient(105deg, rgba(14,53,64,0.7) 0%, rgba(14,53,64,0.35) 55%, rgba(14,53,64,0.1) 100%);"></div>
+    <div style="position: relative; max-width: 1440px; margin: 0 auto; height: 100%; padding: 0 40px; display: flex; flex-direction: column; justify-content: center;">
+      <div style="max-width: 720px;">
+        <div style="font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(247,244,237,0.65); margin-bottom: 22px;">Sustainability</div>
+        <h1 style="font-family: var(--font-serif); font-size: 68px; font-weight: 600; line-height: 1.02; letter-spacing: -0.02em; color: var(--bone); margin: 0 0 24px;">Drawn from a renewable sea.</h1>
+        <p style="color: rgba(247,244,237,0.86); font-size: 19px; line-height: 1.55; max-width: 560px; margin: 0;">The ooid banks of The Bahamas rebuild themselves grain by grain, tide after tide. We harvest gently, kiln nothing, and hold ourselves to the health of the water we take from.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- STAT BAND -->
+  <div style="background: var(--sand); background-image: radial-gradient(circle at 20% 30%, rgba(255,255,255,0.5), transparent 40%);">
+    <div style="max-width: 1440px; margin: 0 auto; padding: 64px 40px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px;">
+      <sc-for list="{{ stats }}" as="s" hint-placeholder-count="4">
+        <div>
+          <div style="font-family: var(--font-serif); font-size: 52px; font-weight: 600; letter-spacing: -0.02em; color: var(--ink); line-height: 1; margin-bottom: 12px;">{{ s.value }}</div>
+          <div style="font-size: 14px; font-weight: 500; color: var(--ink); margin-bottom: 4px;">{{ s.label }}</div>
+          <div style="font-family: var(--font-mono); font-size: 11.5px; color: var(--fg-2); letter-spacing: 0.04em;">{{ s.sub }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+
+  <!-- HOW OOID RENEWS -->
+  <div style="max-width: 1440px; margin: 0 auto; padding: 96px 40px;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center;">
+      <div>
+        <div style="font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-2);">The resource</div>
+        <h2 style="font-family: var(--font-serif); font-size: 40px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.08; margin: 14px 0 20px;">Ooid sand is precipitated, not mined.</h2>
+        <p style="font-size: 15.5px; line-height: 1.65; color: var(--fg-2); margin: 0 0 18px;">Each ooid is a tiny sphere of calcium carbonate that forms as warm, calcium-saturated seawater rolls it across the shallow banks. The banks are among the most productive carbonate factories on Earth — depositing new material continuously as the tides move over them.</p>
+        <p style="font-size: 15.5px; line-height: 1.65; color: var(--fg-2); margin: 0;">Because we take from an actively depositing system rather than a fixed ore body, responsible extraction works with a renewing supply — not against a finite one.</p>
+      </div>
+      <div style="aspect-ratio: 4/3; border-radius: 8px; overflow: hidden; position: relative; background: url('assets/aragonite-macro.jpg') center/cover;">
+      </div>
+    </div>
+  </div>
+
+  <!-- PILLARS -->
+  <div style="background: var(--paper); border-top: 1px solid var(--ink-08); border-bottom: 1px solid var(--ink-08);">
+    <div style="max-width: 1440px; margin: 0 auto; padding: 96px 40px;">
+      <div style="font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-2);">Our commitment</div>
+      <h2 style="font-family: var(--font-serif); font-size: 44px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.08; margin: 14px 0 56px; max-width: 640px;">Four things we hold ourselves to.</h2>
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px;">
+        <sc-for list="{{ pillars }}" as="p" hint-placeholder-count="4">
+          <div style="border-top: 1.5px solid var(--ink); padding-top: 24px;">
+            <div style="width: 44px; height: 44px; border-radius: 8px; background: var(--sand); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+              <div style="width: 20px; height: 20px; border-radius: 5px; background: var(--tide);"></div>
+            </div>
+            <h3 style="font-family: var(--font-serif); font-size: 22px; font-weight: 600; letter-spacing: -0.01em; margin: 0 0 10px; line-height: 1.15;">{{ p.title }}</h3>
+            <p style="font-size: 14px; line-height: 1.6; color: var(--fg-2); margin: 0;">{{ p.body }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARBON COMPARISON -->
+  <div style="max-width: 1440px; margin: 0 auto; padding: 96px 40px;">
+    <div style="display: grid; grid-template-columns: 1fr 1.4fr; gap: 72px; align-items: flex-start;">
+      <div>
+        <div style="font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-2);">Carbon &amp; energy</div>
+        <h2 style="font-family: var(--font-serif); font-size: 38px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.1; margin: 14px 0 20px;">Nothing kilned. Less carbon in the bag.</h2>
+        <p style="font-size: 15.5px; line-height: 1.65; color: var(--fg-2); margin: 0;">Mined lime is quarried, crushed, and often calcined in high-temperature kilns — a process that releases CO₂ twice over. Aragocor aragonite arrives pre-formed by the ocean. We wash, dry, and size it. No blasting, no kiln, no calcination.</p>
+      </div>
+      <table style="width: 100%; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th style="text-align: left; padding: 0 14px 14px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; color: var(--fg-2); border-bottom: 1.5px solid var(--ink);"></th>
+            <th style="text-align: left; padding: 0 14px 14px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; color: var(--ink); border-bottom: 1.5px solid var(--ink);">ARAGOCOR ARAGONITE</th>
+            <th style="text-align: left; padding: 0 14px 14px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; color: var(--fg-2); border-bottom: 1.5px solid var(--ink);">MINED / CALCINED LIME</th>
+          </tr>
+        </thead>
+        <tbody>
+          <sc-for list="{{ compare }}" as="c" hint-placeholder-count="6">
+            <tr>
+              <td style="padding: 17px 14px; font-size: 14.5px; font-weight: 500; border-top: 1px solid var(--ink-08);">{{ c.k }}</td>
+              <td style="padding: 17px 14px; font-family: var(--font-mono); font-size: 14px; color: var(--ink); border-top: 1px solid var(--ink-08); background: rgba(107,143,71,0.07);">{{ c.ours }}</td>
+              <td style="padding: 17px 14px; font-family: var(--font-mono); font-size: 14px; color: var(--fg-2); border-top: 1px solid var(--ink-08);">{{ c.theirs }}</td>
+            </tr>
+          </sc-for>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div style="position: relative; overflow: hidden; background: radial-gradient(ellipse at 30% 40%, #49613C 0%, #0E3540 78%);">
+    <div style="position: relative; max-width: 1440px; margin: 0 auto; padding: 88px 40px; display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap;">
+      <div>
+        <h2 style="font-family: var(--font-serif); font-size: 40px; font-weight: 600; letter-spacing: -0.015em; color: var(--bone); margin: 0 0 10px; max-width: 560px; line-height: 1.08;">Read the full stewardship report.</h2>
+        <p style="font-size: 16px; color: rgba(247,244,237,0.8); margin: 0; max-width: 520px;">Methods, monitoring, and third-party findings — published in full, updated annually.</p>
+      </div>
+      <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+        <a href="resources.html" class="btn-ar btn-bone" style="background: var(--bone); color: var(--ink); height: 52px; padding: 0 28px; border-radius: 4px; font-size: 16px; font-weight: 500; display: inline-flex; align-items: center; border: none;">Stewardship report (PDF)</a>
+        <a href="contact.html" class="btn-ar btn-boneline" style="background: transparent; color: var(--bone); height: 52px; padding: 0 28px; border-radius: 4px; font-size: 16px; font-weight: 500; display: inline-flex; align-items: center; border: 1px solid rgba(247,244,237,0.4);">Talk to our team</a>
+      </div>
+    </div>
+  </div>
+
+  <dc-import name="SiteFooter" hint-size="100%,440px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      stats: [
+        { value: 'Renewable', label: 'Ocean-deposited resource', sub: 'Ooid banks rebuild with the tides' },
+        { value: '0', label: 'Kilns in our process', sub: 'No calcination, no blasting' },
+        { value: '100%', label: 'Lots third-party verified', sub: 'Methods cited on every COA' },
+        { value: '< 2 ppm', label: 'Heavy metals (Pb)', sub: 'Inside AWWA / ANSI limits' },
+      ],
+      pillars: [
+        { title: 'Low-impact harvesting', body: 'Suction-dredge methods sized to the deposition rate, with mapped no-take zones over sensitive habitat.' },
+        { title: 'Reef & seagrass care', body: 'Ongoing monitoring of adjacent reef and seagrass beds, with harvesting paused where surveys flag stress.' },
+        { title: 'No kiln, no calcination', body: 'The ocean does the chemistry. We only wash, dry, and size — a fraction of the energy of mined lime.' },
+        { title: 'Transparent reporting', body: 'Annual stewardship findings and full lot analyses published openly. No proprietary asterisks.' },
+      ],
+      compare: [
+        { k: 'Formation', ours: 'Ocean-precipitated', theirs: 'Geologic ore body' },
+        { k: 'Extraction', ours: 'Gentle suction dredge', theirs: 'Blasting & crushing' },
+        { k: 'Processing', ours: 'Wash · dry · size', theirs: 'Crush · kiln · calcine' },
+        { k: 'Kiln CO₂', ours: 'None', theirs: 'Released on calcination' },
+        { k: 'Supply', ours: 'Renewing deposit', theirs: 'Finite quarry' },
+        { k: 'Trace minerals', ours: 'Marine chelates retained', theirs: 'Quarry overburden' },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>
