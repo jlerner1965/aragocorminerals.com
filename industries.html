@@ -1,358 +1,134 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Industries &amp; Applications | AragoCor Minerals</title>
-<meta name="description" content="Industrial markets served by high-purity natural oolitic aragonite calcium carbonate.">
-<link rel="canonical" href="https://aragocorminerals.com/industries.html">
-<link rel="icon" href="images/favicon.ico">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="AragoCor Minerals">
-<meta property="og:title" content="Industries & Applications | AragoCor Minerals">
-<meta property="og:description" content="Industrial markets served by high-purity natural oolitic aragonite calcium carbonate.">
-<meta property="og:url" content="https://aragocorminerals.com/industries.html">
-<meta property="og:image" content="https://aragocorminerals.com/images/industries-platform.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Industries & Applications | AragoCor Minerals">
-<meta name="twitter:description" content="Industrial markets served by high-purity natural oolitic aragonite calcium carbonate.">
-<meta name="twitter:image" content="https://aragocorminerals.com/images/industries-platform.jpg">
-<link rel="stylesheet" href="styles.css">
-<style>
-main .btn{white-space:normal;height:auto;text-align:center}
-@media(max-width:520px){#material-specification .grid-4{grid-template-columns:1fr}}
-.ind-list{margin-top:2.5rem;border-top:1px solid hsl(var(--border))}
-.ind-item{border-bottom:1px solid hsl(var(--border))}
-.ind-trigger{width:100%;text-align:left;background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.5rem 0}
-.ind-trigger-main{display:flex;align-items:center;gap:1.25rem}
-.ind-trigger .icon{width:26px;height:26px;color:hsl(var(--accent));flex:none}
-.ind-name{display:block;font-family:var(--font-display);font-size:1.375rem;color:hsl(var(--foreground))}
-.ind-tag{display:block;margin-top:.25rem;font-size:.875rem;color:hsl(var(--muted-foreground))}
-.ind-chev{width:20px;height:20px;flex:none;color:hsl(var(--muted-foreground));transition:transform .3s}
-.ind-item.open .ind-chev{transform:rotate(180deg)}
-.ind-panel{overflow:hidden;max-height:0;transition:max-height .35s ease}
-.ind-panel-inner{display:grid;grid-template-columns:1fr;gap:1.5rem;padding-bottom:2rem}
-@media(min-width:768px){.ind-panel-inner{grid-template-columns:minmax(0,20rem) 1fr;gap:2rem}}
-.ind-media{border-radius:3px;overflow:hidden;aspect-ratio:4/3}
-.ind-media img{width:100%;height:100%;object-fit:cover}
-.ind-benefits{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr;gap:.5rem}
-@media(min-width:640px){.ind-benefits{grid-template-columns:1fr 1fr}}
-.ind-benefits li{position:relative;padding-left:1.25rem;font-size:.9rem;color:hsl(var(--foreground))}
-.ind-benefits li::before{content:"";position:absolute;left:0;top:.5em;width:6px;height:6px;border-radius:9999px;background:hsl(var(--accent))}
-.ind-apps{margin-top:1.25rem;display:flex;flex-wrap:wrap;gap:.375rem}
-.ind-body::before{content:"Evaluation topics";display:block;margin-bottom:.75rem;font-family:var(--font-mono);font-size:.6875rem;text-transform:uppercase;letter-spacing:.14em;color:hsl(var(--muted-foreground))}
-</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
 </head>
 <body>
-<div id="top">
-<div id="header-mount" data-active="industries.html" data-transparent="true"></div>
-<main>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/aragocor-minerals-design-system-6cd5605f-b1a2-4c76-af9e-ea4efe576a33/colors_and_type.css">
+<script src="_ds/aragocor-minerals-design-system-6cd5605f-b1a2-4c76-af9e-ea4efe576a33/_ds_bundle.js"></script>
+<style>:root{--ink:#0E3540;--tide:#526A70;--shore:#7C97A0;--sand:#D7C59C;--bone:#F7F4ED;--paper:#FFFFFF;--root:#49613C;--leaf:#49613C;--fg-1:#0E3540;--fg-2:#526A70;--fg-3:#8A9AA0;--border:#C7CBC6;--border-strong:#A9B0AC;--ink-04:rgba(14,53,64,0.04);--ink-08:rgba(14,53,64,0.08);--ink-12:rgba(14,53,64,0.12);--ink-20:rgba(14,53,64,0.20);--ink-40:rgba(14,53,64,0.40);--ink-60:rgba(14,53,64,0.60);--ink-80:rgba(14,53,64,0.80);}</style>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bone); }
+  a { border-bottom: none; }
+  .icard:hover { box-shadow: var(--shadow-2); border-color: var(--ink-20); }
+  .icard:hover .icard-img { transform: scale(1.04); }
+  .btn-ar { transition: all 220ms var(--ease-tide); cursor: pointer; }
+  .btn-ar:active { transform: scale(0.97); }
+  .btn-ink:hover { background: var(--tide) !important; }
+  .btn-outline:hover { border-color: var(--ink) !important; background: var(--ink-04) !important; }
+  .btn-boneline:hover { border-color: var(--bone) !important; background: rgba(247,244,237,0.08) !important; }
+</style>
+</helmet>
 
-<!-- ================= PAGE HERO ================= -->
-<section class="hero page-hero">
-  <div class="hero-media"><img src="images/industries-platform.jpg" alt="Industrial platform serving multiple aragonite application sectors"></div>
-  <div class="hero-scrim"></div>
-  <div class="container-wide hero-inner">
-    <p class="eyebrow">Industries</p>
-    <h1 class="display-1 text-balance">Industries we serve. <span class="italic">A mineral platform.</span></h1>
-    <p class="hero-desc text-pretty">From glass batches and soils to water systems and polymer formulations, natural oolitic aragonite can be evaluated across a broad set of industrial applications.</p>
-    <div class="hero-actions">
-      <a class="btn btn-lg btn-accent ring" href="contact.html?type=sample">Request Sample <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-    </div>
-  </div>
-</section>
+<div style="font-family: var(--font-sans); color: var(--ink); background: var(--bone); min-height: 100vh;">
+  <dc-import name="SiteNav" active="industries" hint-size="100%,74px"></dc-import>
 
-<!-- ================= PRODUCT GRADES ================= -->
-<section class="container-wide" id="material-specification" style="padding-bottom:2rem">
-  <div class="section-head">
-    <p class="eyebrow">Material options</p>
-    <h2 class="display-2 text-balance">Representative sizing categories. <span class="italic">One naturally occurring mineral.</span></h2>
-    <p class="lead text-pretty">Available sizing, documentation and packaging are confirmed for the material and application under discussion.</p>
-  </div>
-  <div class="grid grid-4 mt-head">
-    <div class="glass-card" style="padding:1.5rem"><div class="eyebrow-muted">Fine</div><h3 class="display" style="font-size:1.25rem;margin-top:.5rem">Fine Aragonite</h3><p style="margin-top:.5rem;font-size:.875rem;color:hsl(var(--muted-foreground))">For evaluation in formulations that require smaller particle sizes.</p><a class="btn btn-sm btn-outline" style="margin-top:1.25rem" href="contact.html?type=download">Request specification</a></div>
-    <div class="glass-card" style="padding:1.5rem"><div class="eyebrow-muted">Agricultural</div><h3 class="display" style="font-size:1.25rem;margin-top:.5rem">Agricultural Sizing</h3><p style="margin-top:.5rem;font-size:.875rem;color:hsl(var(--muted-foreground))">For agricultural, horticultural, soil-amendment and blending evaluations.</p><a class="btn btn-sm btn-outline" style="margin-top:1.25rem" href="contact.html?type=download">Request specification</a></div>
-    <div class="glass-card" style="padding:1.5rem"><div class="eyebrow-muted">Coarse</div><h3 class="display" style="font-size:1.25rem;margin-top:.5rem">Coarse Aragonite</h3><p style="margin-top:.5rem;font-size:.875rem;color:hsl(var(--muted-foreground))">For filtration, construction, environmental or other size-specific trials.</p><a class="btn btn-sm btn-outline" style="margin-top:1.25rem" href="contact.html?type=download">Request specification</a></div>
-    <div class="glass-card" style="padding:1.5rem"><div class="eyebrow-muted">Custom</div><h3 class="display" style="font-size:1.25rem;margin-top:.5rem">Custom-Sized Material</h3><p style="margin-top:.5rem;font-size:.875rem;color:hsl(var(--muted-foreground))">Discuss a target distribution for manufacturing, formulation or research work.</p><a class="btn btn-sm btn-outline" style="margin-top:1.25rem" href="contact.html?type=download">Request specification</a></div>
+  <!-- HEADER -->
+  <div style="position: relative; overflow: hidden; background: url('assets/industries-platform.jpg') center 55% / cover;">
+    <div style="position: absolute; inset: 0; background: linear-gradient(100deg, rgba(14,53,64,0.88) 0%, rgba(14,53,64,0.62) 55%, rgba(14,53,64,0.28) 100%);"></div>
+    <div style="position: relative; max-width: 1440px; margin: 0 auto; padding: 96px 40px 88px;">
+      <div style="font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(247,244,237,0.65);">Industries &amp; applications</div>
+      <h1 style="font-family: var(--font-serif); font-size: 64px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.04; margin: 16px 0 24px; max-width: 900px; color: var(--bone);">One mineral. Every room it walks into.</h1>
+      <p style="font-size: 19px; line-height: 1.55; max-width: 680px; color: rgba(247,244,237,0.86); margin: 0;">From row-crop calcium to glass batch to reef restoration — aragonite's purity, reactivity, and clean particle profile solve problems in markets that mined limestone can't reach. Nine of them, below.</p>
+    </div>
   </div>
 
-  <div class="industry-data-bridge mt-head">
-    <div>
-      <p class="eyebrow">One technical source</p>
-      <h3 class="display-3">Composition, comparison and particle sizing now live together.</h3>
-      <p>Review the representative data in one place, then request the current specification or lot documentation for the material under consideration.</p>
-    </div>
-    <div class="industry-data-actions">
-      <a class="btn btn-primary" href="science.html#tds">Review Technical Data</a>
-      <a class="btn btn-outline" href="resources/AragoCor_Technical_Data_Sheet.pdf" target="_blank" rel="noopener">Download Technical Data Sheet</a>
+  <!-- INDUSTRY CARDS -->
+  <div style="max-width: 1440px; margin: 0 auto; padding: 64px 40px;">
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+      <sc-for list="{{ industries }}" as="ind" hint-placeholder-count="9">
+        <div class="icard" style="background: var(--paper); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; box-shadow: var(--shadow-1); transition: box-shadow 220ms var(--ease-tide), border-color 220ms var(--ease-tide); display: flex; flex-direction: column;">
+          <div style="aspect-ratio: 16 / 10; overflow: hidden; position: relative;">
+            <div class="icard-img" style="position: absolute; inset: 0; background: {{ ind.bg }}; transition: transform 420ms var(--ease-tide);"></div>
+            <div style="position: absolute; inset: 0; opacity: 0.12; mix-blend-mode: overlay; background-image: repeating-radial-gradient(circle at 0 0, rgba(255,255,255,0.4) 0, rgba(255,255,255,0) 2px); background-size: 3px 3px;"></div>
+            <div style="position: absolute; top: 16px; left: 16px;"><span style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; color: var(--bone); background: rgba(14,53,64,0.55); padding: 5px 10px; border-radius: 999px;">{{ ind.tag }}</span></div>
+          </div>
+          <div style="padding: 26px; display: flex; flex-direction: column; flex: 1;">
+            <h3 style="font-family: var(--font-serif); font-size: 24px; font-weight: 600; letter-spacing: -0.01em; margin: 0 0 10px; line-height: 1.12;">{{ ind.title }}</h3>
+            <p style="font-size: 14px; line-height: 1.55; color: var(--fg-2); margin: 0 0 18px;">{{ ind.body }}</p>
+            <div style="margin-top: auto; padding-top: 18px; border-top: 1px solid var(--ink-08); display: flex; justify-content: space-between; align-items: center; gap: 12px;">
+              <span style="font-family: var(--font-mono); font-size: 12px; color: var(--tide); letter-spacing: 0.02em;">{{ ind.spec }}</span>
+              <span style="font-family: var(--font-mono); font-size: 12px; color: var(--fg-3);">{{ ind.grade }}</span>
+            </div>
+          </div>
+        </div>
+      </sc-for>
     </div>
   </div>
-</section>
 
-<!-- ================= SEARCH + ACCORDION ================= -->
-<section class="container-wide" style="padding-block:4rem">
-  <div class="searchbar max-lg">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-    <input type="text" placeholder="Search industries or applications…" data-search="#industryGrid" id="industrySearch" aria-label="Search industries or applications">
-  </div>
-  <p style="margin-top:1rem;max-width:52rem;font-size:.8125rem;color:hsl(var(--muted-foreground))">The entries below identify evaluation areas, not guaranteed performance, regulatory status or fitness for use. Review the <a class="link-underline" href="#material-specification">full product specification above</a>; final material selection depends on current documentation, customer testing and applicable requirements.</p>
-
-  <div class="ind-list" id="industryGrid">
-<div class="ind-item" id="glass" data-card data-text="Glass Manufacturing High-purity calcium for advanced glass batches. Container Glass Flat Glass Solar Glass Fiberglass Specialty Glass Optical Glass">
-  <button class="ind-trigger" aria-expanded="false">
-    <span class="ind-trigger-main"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3v5l-5 9a2 2 0 0 0 2 3h12a2 2 0 0 0 2-3l-5-9V3"/><line x1="8" y1="3" x2="16" y2="3"/></svg><span><span class="ind-name">Glass Manufacturing</span><span class="ind-tag">High-purity calcium for advanced glass batches.</span></span></span>
-    <svg class="ind-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-  </button>
-  <div class="ind-panel">
-    <div class="ind-panel-inner">
-      <div class="ind-media"><img src="images/glass-furnace.jpg" alt="Glass Manufacturing application photograph" loading="lazy"></div>
-      <div class="ind-body">
-        <ul class="ind-benefits"><li>Batch calcium contribution</li><li>Particle-size selection</li><li>Iron and impurity limits</li><li>Furnace and cullet conditions</li><li>Thermal behavior in the complete formulation</li></ul>
-        <div class="ind-apps"><span class="chip">Container Glass</span><span class="chip">Flat Glass</span><span class="chip">Solar Glass</span><span class="chip">Fiberglass</span><span class="chip">Specialty Glass</span><span class="chip">Optical Glass</span></div>
-        <a class="btn btn-primary" style="margin-top:1.25rem" href="contact.html?type=sample">Request Sample <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="ind-item" id="agriculture" data-card data-text="Agriculture Natural calcium carbonate for soil and formulation trials. Soil Amendment Fertilizer Carrier Vineyards Specialty Crops Turf pH Correction">
-  <button class="ind-trigger" aria-expanded="false">
-    <span class="ind-trigger-main"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M12 12C12 7 8 5 4 5c0 5 3 8 8 8"/><path d="M12 12c0-5 4-7 8-7 0 5-3 8-8 8"/></svg><span><span class="ind-name">Agriculture</span><span class="ind-tag">Natural calcium carbonate for soil and formulation trials.</span></span></span>
-    <svg class="ind-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-  </button>
-  <div class="ind-panel">
-    <div class="ind-panel-inner">
-      <div class="ind-media"><img src="images/agriculture-soil.jpg" alt="Agriculture application photograph" loading="lazy"></div>
-      <div class="ind-body">
-        <ul class="ind-benefits"><li>Soil pH response</li><li>Relative solubility</li><li>Soil structure</li><li>Carrier compatibility</li><li>Typical chemistry and moisture</li></ul>
-        <div class="ind-apps"><span class="chip">Soil Amendment</span><span class="chip">Fertilizer Carrier</span><span class="chip">Vineyards</span><span class="chip">Specialty Crops</span><span class="chip">Turf</span><span class="chip">pH Correction</span><span class="chip">Organic Programs</span></div>
-        <a class="btn btn-primary" style="margin-top:1.25rem" href="contact.html?type=sample">Request Sample <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="ind-item" id="water-treatment" data-card data-text="Water Treatment Natural aragonite for water and environmental systems. Municipal Water Industrial Water Stormwater Aquaculture Aquariums Environmental Restoration">
-  <button class="ind-trigger" aria-expanded="false">
-    <span class="ind-trigger-main"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2s7 8.5 7 13a7 7 0 0 1-14 0c0-4.5 7-13 7-13z"/></svg><span><span class="ind-name">Water Treatment</span><span class="ind-tag">Natural aragonite for water and environmental systems.</span></span></span>
-    <svg class="ind-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-  </button>
-  <div class="ind-panel">
-    <div class="ind-panel-inner">
-      <div class="ind-media"><img src="images/water-droplet.jpg" alt="Water Treatment application photograph" loading="lazy"></div>
-      <div class="ind-body">
-        <ul class="ind-benefits"><li>pH buffering</li><li>Phosphorus interactions</li><li>Remineralization media</li><li>Non-corrosive buffering</li></ul>
-        <div class="ind-apps"><span class="chip">Municipal Water</span><span class="chip">Industrial Water</span><span class="chip">Stormwater</span><span class="chip">Aquaculture</span><span class="chip">Aquariums</span><span class="chip">Environmental Restoration</span></div>
-        <a class="btn btn-primary" style="margin-top:1.25rem" href="contact.html?type=sample">Request Sample <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="ind-item" id="wastewater" data-card data-text="Wastewater Phosphorus and pH management at scale. Industrial Wastewater Municipal Plants Mine Water Agricultural Runoff">
-  <button class="ind-trigger" aria-expanded="false">
-    <span class="ind-trigger-main"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><path d="M2 14c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><path d="M2 20c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/></svg><span><span class="ind-name">Wastewater</span><span class="ind-tag">Phosphorus and pH management at scale.</span></span></span>
-    <svg class="ind-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-  </button>
-  <div class="ind-panel">
-    <div class="ind-panel-inner">
-      <div class="ind-media"><img src="images/industry-wastewater.jpg" alt="Wastewater application photograph" loading="lazy"></div>
-      <div class="ind-body">
-        <ul class="ind-benefits"><li>pH neutralization</li><li>Phosphorus capture</li><li>Sludge handling</li><li>Natural input</li></ul>
-        <div class="ind-apps"><span class="chip">Industrial Wastewater</span><span class="chip">Municipal Plants</span><span class="chip">Mine Water</span><span class="chip">Agricultural Runoff</span></div>
-        <a class="btn btn-primary" style="margin-top:1.25rem" href="contact.html?type=sample">Request Sample <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="ind-item" id="plastics" data-card data-text="Plastics & Polymers Engineered filler for advanced polymer systems. Automotive Compounds Rigid Packaging Films &amp; Sheet Construction Profiles Consumer Goods Masterbatches">
-  <button class="ind-trigger" aria-expanded="false">
-    <span class="ind-trigger-main"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 22 8 12 14 2 8"/><polyline points="2 16 12 22 22 16"/><polyline points="2 12 12 18 22 12"/></svg><span><span class="ind-name">Plastics &amp; Polymers</span><span class="ind-tag">Engineered filler for advanced polymer systems.</span></span></span>
-    <svg class="ind-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-  </button>
-  <div class="ind-panel">
-    <div class="ind-panel-inner">
-      <div class="ind-media"><img src="images/industry-plastics.jpg" alt="Plastics & Polymers application photograph" loading="lazy"></div>
-      <div class="ind-body">
-        <ul class="ind-benefits"><li>Particle morphology</li><li>Whiteness and opacity</li><li>Process compatibility</li><li>Lifecycle questions</li></ul>
-        <div class="ind-apps"><span class="chip">Automotive Compounds</span><span class="chip">Rigid Packaging</span><span class="chip">Films &amp; Sheet</span><span class="chip">Construction Profiles</span><span class="chip">Consumer Goods</span><span class="chip">Masterbatches</span></div>
-        <a class="btn btn-primary" style="margin-top:1.25rem" href="contact.html?type=sample">Request Sample <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="ind-item" id="paint" data-card data-text="Paint & Coatings Whiteness, rheology and durability. Architectural Coatings Industrial Coatings Marine Coatings Powder Coatings Primer Systems">
-  <button class="ind-trigger" aria-expanded="false">
-    <span class="ind-trigger-main"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="5" rx="1"/><line x1="8" y1="8" x2="8" y2="14"/><rect x="6" y="14" width="4" height="7" rx="1"/></svg><span><span class="ind-name">Paint &amp; Coatings</span><span class="ind-tag">Whiteness, rheology and durability.</span></span></span>
-    <svg class="ind-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-  </button>
-  <div class="ind-panel">
-    <div class="ind-panel-inner">
-      <div class="ind-media"><img src="images/industry-paint.jpg" alt="Paint & Coatings application photograph" loading="lazy"></div>
-      <div class="ind-body">
-        <ul class="ind-benefits"><li>Optical performance</li><li>Rheology control</li><li>Film durability</li><li>Low impurity</li></ul>
-        <div class="ind-apps"><span class="chip">Architectural Coatings</span><span class="chip">Industrial Coatings</span><span class="chip">Marine Coatings</span><span class="chip">Powder Coatings</span><span class="chip">Primer Systems</span></div>
-        <a class="btn btn-primary" style="margin-top:1.25rem" href="contact.html?type=sample">Request Sample <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="ind-item" id="construction" data-card data-text="Construction, Concrete & Cement Filler chemistry for low-carbon concrete. Cement Filler Ready-Mix Concrete Precast Mortars &amp; Grouts Self-Consolidating Concrete">
-  <button class="ind-trigger" aria-expanded="false">
-    <span class="ind-trigger-main"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1"/><line x1="9" y1="21" x2="9" y2="11"/><line x1="15" y1="21" x2="15" y2="11"/><line x1="4" y1="11" x2="20" y2="11"/></svg><span><span class="ind-name">Construction, Concrete &amp; Cement</span><span class="ind-tag">Filler chemistry for low-carbon concrete.</span></span></span>
-    <svg class="ind-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-  </button>
-  <div class="ind-panel">
-    <div class="ind-panel-inner">
-      <div class="ind-media"><img src="images/industry-construction.jpg" alt="Construction, Concrete & Cement application photograph" loading="lazy"></div>
-      <div class="ind-body">
-        <ul class="ind-benefits"><li>Cement filler chemistry</li><li>Hydration interactions</li><li>Workability</li><li>Lifecycle questions</li></ul>
-        <div class="ind-apps"><span class="chip">Cement Filler</span><span class="chip">Ready-Mix Concrete</span><span class="chip">Precast</span><span class="chip">Mortars &amp; Grouts</span><span class="chip">Self-Consolidating Concrete</span></div>
-        <a class="btn btn-primary" style="margin-top:1.25rem" href="contact.html?type=sample">Request Sample <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="ind-item" id="turf" data-card data-text="Turf, Landscaping & Golf Infill and root-zone applications. Artificial Turf Infill Golf Greens &amp; Tees Sports Fields Premium Landscaping Equestrian Surfaces">
-  <button class="ind-trigger" aria-expanded="false">
-    <span class="ind-trigger-main"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V9l7-6 7 6v12"/><line x1="9" y1="21" x2="9" y2="13"/><line x1="15" y1="21" x2="15" y2="13"/></svg><span><span class="ind-name">Turf, Landscaping &amp; Golf</span><span class="ind-tag">Infill and root-zone applications.</span></span></span>
-    <svg class="ind-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-  </button>
-  <div class="ind-panel">
-    <div class="ind-panel-inner">
-      <div class="ind-media"><img src="images/industry-turf.jpg" alt="Turf, Landscaping & Golf application photograph" loading="lazy"></div>
-      <div class="ind-body">
-        <ul class="ind-benefits"><li>Calcium availability</li><li>Natural alternative</li><li>USGA-style profiles</li></ul>
-        <div class="ind-apps"><span class="chip">Artificial Turf Infill</span><span class="chip">Golf Greens &amp; Tees</span><span class="chip">Sports Fields</span><span class="chip">Premium Landscaping</span><span class="chip">Equestrian Surfaces</span></div>
-        <a class="btn btn-primary" style="margin-top:1.25rem" href="contact.html?type=sample">Request Sample <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="ind-item" id="aquaculture" data-card data-text="Aquaculture Mineral support for aquatic systems. Shellfish &amp; Coral Recirculating Aquaculture Public Aquariums Reef Restoration">
-  <button class="ind-trigger" aria-expanded="false">
-    <span class="ind-trigger-main"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-6 10-6 10 6 10 6-4 6-10 6-10-6-10-6z"/><circle cx="16" cy="12" r="1"/></svg><span><span class="ind-name">Aquaculture</span><span class="ind-tag">Mineral support for aquatic systems.</span></span></span>
-    <svg class="ind-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-  </button>
-  <div class="ind-panel">
-    <div class="ind-panel-inner">
-      <div class="ind-media"><img src="images/industry-aquaculture.jpg" alt="Aquaculture application photograph" loading="lazy"></div>
-      <div class="ind-body">
-        <ul class="ind-benefits"><li>Alkalinity &amp; pH</li><li>Calcium for shell &amp; skeleton</li><li>Substrate biology</li></ul>
-        <div class="ind-apps"><span class="chip">Shellfish &amp; Coral</span><span class="chip">Recirculating Aquaculture</span><span class="chip">Public Aquariums</span><span class="chip">Reef Restoration</span></div>
-        <a class="btn btn-primary" style="margin-top:1.25rem" href="contact.html?type=sample">Request Sample <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="ind-item" id="animal-feed" data-card data-text="Animal Feed Calcium source for livestock &amp; poultry. Layer Hens Broilers Dairy Equine Mineral Premixes">
-  <button class="ind-trigger" aria-expanded="false">
-    <span class="ind-trigger-main"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M8 6c0 2 2 3 4 3s4-1 4-3"/><path d="M8 12c0 2 2 3 4 3s4-1 4-3"/><path d="M8 18c0 1 2 2 4 2s4-1 4-2"/></svg><span><span class="ind-name">Animal Feed</span><span class="ind-tag">Calcium source for livestock &amp; poultry.</span></span></span>
-    <svg class="ind-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-  </button>
-  <div class="ind-panel">
-    <div class="ind-panel-inner">
-      <div class="ind-media"><img src="images/industry-animal-feed.jpg" alt="Animal Feed application photograph" loading="lazy"></div>
-      <div class="ind-body">
-        <ul class="ind-benefits"><li>Calcium contribution</li><li>Impurity limits</li><li>Pellet and premix compatibility</li><li>OMRI-listed livestock mineral available; intended use requires regulatory and formulation review</li></ul>
-        <div class="ind-apps"><span class="chip">Layer Hens</span><span class="chip">Broilers</span><span class="chip">Dairy</span><span class="chip">Equine</span><span class="chip">Mineral Premixes</span></div>
-        <a class="btn btn-primary" style="margin-top:1.25rem" href="contact.html?type=sample">Request Sample <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="ind-item" id="environmental" data-card data-text="Environmental Remediation Natural mineral for ecological systems. Acid Mine Drainage Wetland Restoration Reef Restoration Coastal Stabilization">
-  <button class="ind-trigger" aria-expanded="false">
-    <span class="ind-trigger-main"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13c0-6 7-11 7-11s7 5 7 11a7 7 0 0 1-7 7z"/><path d="M4 13c4 0 7 3 7 7"/></svg><span><span class="ind-name">Environmental Remediation</span><span class="ind-tag">Natural mineral for ecological systems.</span></span></span>
-    <svg class="ind-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-  </button>
-  <div class="ind-panel">
-    <div class="ind-panel-inner">
-      <div class="ind-media"><img src="images/industry-environmental.jpg" alt="Environmental Remediation application photograph" loading="lazy"></div>
-      <div class="ind-body">
-        <ul class="ind-benefits"><li>Acid mine drainage</li><li>Soil and sediment response</li><li>Site-specific compatibility and permitting</li></ul>
-        <div class="ind-apps"><span class="chip">Acid Mine Drainage</span><span class="chip">Wetland Restoration</span><span class="chip">Reef Restoration</span><span class="chip">Coastal Stabilization</span></div>
-        <a class="btn btn-primary" style="margin-top:1.25rem" href="contact.html?type=sample">Request Sample <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="ind-item" id="battery-materials" data-card data-text="Battery Materials Research Calcium carbonate for early-stage materials studies. Solid-state Research Calcium-ion Chemistries Electrode Additives Energy Materials R&amp;D">
-  <button class="ind-trigger" aria-expanded="false">
-    <span class="ind-trigger-main"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="8" width="18" height="8" rx="1"/><line x1="22" y1="11" x2="22" y2="13"/></svg><span><span class="ind-name">Battery Materials Research</span><span class="ind-tag">Calcium carbonate for early-stage materials studies.</span></span></span>
-    <svg class="ind-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-  </button>
-  <div class="ind-panel">
-    <div class="ind-panel-inner">
-      <div class="ind-media"><img src="images/industry-battery.jpg" alt="Battery Materials application photograph" loading="lazy"></div>
-      <div class="ind-body">
-        <ul class="ind-benefits"><li>Purity requirements</li><li>Particle characteristics</li><li>Research-only suitability testing</li></ul>
-        <div class="ind-apps"><span class="chip">Solid-state Research</span><span class="chip">Calcium-ion Chemistries</span><span class="chip">Electrode Additives</span><span class="chip">Energy Materials R&amp;D</span></div>
-        <a class="btn btn-primary" style="margin-top:1.25rem" href="contact.html?type=sample">Request Sample <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="ind-item" id="emerging-technologies" data-card data-text="Emerging Technologies From biomaterials to advanced materials. Biomedical Research Advanced Ceramics Specialty Chemistry">
-  <button class="ind-trigger" aria-expanded="false">
-    <span class="ind-trigger-main"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"/><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></svg><span><span class="ind-name">Emerging Technologies</span><span class="ind-tag">From biomaterials to advanced materials.</span></span></span>
-    <svg class="ind-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-  </button>
-  <div class="ind-panel">
-    <div class="ind-panel-inner">
-      <div class="ind-media"><img src="images/industry-emerging.jpg" alt="Emerging Technologies application photograph" loading="lazy"></div>
-      <div class="ind-body">
-        <ul class="ind-benefits"><li>Biomaterials</li><li>Advanced ceramics</li><li>Specialty chemistry</li></ul>
-        <div class="ind-apps"><span class="chip">Biomedical Research</span><span class="chip">Advanced Ceramics</span><span class="chip">Specialty Chemistry</span></div>
-        <a class="btn btn-primary" style="margin-top:1.25rem" href="contact.html?type=sample">Request Sample <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-      </div>
-    </div>
-  </div>
-</div>
-  </div>
-</section>
-
-<!-- ================= CTA BANNER ================= -->
-<section class="container-wide section-lg">
-  <div class="cta-banner">
-    <div class="aurora-bg"></div><div class="blob"></div>
-    <div class="cta-inner">
+  <!-- SELECTION HELP BAND -->
+  <div style="background: var(--sand); background-image: radial-gradient(circle at 20% 30%, rgba(255,255,255,0.5), transparent 40%), radial-gradient(circle at 82% 72%, rgba(14,53,64,0.05), transparent 42%);">
+    <div style="max-width: 1440px; margin: 0 auto; padding: 88px 40px; display: grid; grid-template-columns: 1fr 1.1fr; gap: 64px; align-items: center;">
       <div>
-        <p class="eyebrow">Next step</p>
-        <h2 class="display-2 text-balance">Specify aragonite in your next formulation.</h2>
-        <p class="lead">Request a technical sample, speak with a specialist or review the available technical briefs.</p>
+        <div style="font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-2);">Not sure which grade</div>
+        <h2 style="font-family: var(--font-serif); font-size: 40px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.08; margin: 14px 0 20px;">Specified by analysis, packed to plan.</h2>
+        <p style="font-size: 15.5px; line-height: 1.6; color: var(--fg-2); margin: 0 0 28px; max-width: 460px;">Send us a soil report, a batch spec, or a target particle band. Our team matches the grade, buffers the pH math, and quotes against your tonnage — usually inside a business day.</p>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <a href="contact.html" class="btn-ar btn-ink" style="background: var(--ink); color: var(--bone); height: 48px; padding: 0 24px; border-radius: 4px; font-size: 15px; font-weight: 500; display: inline-flex; align-items: center; gap: 8px; border: none;">Request a quote</a>
+          <a href="resources.html" class="btn-ar btn-outline" style="background: transparent; color: var(--ink); height: 48px; padding: 0 24px; border-radius: 4px; font-size: 15px; font-weight: 500; display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--border-strong);">Download bulk catalog</a>
+        </div>
       </div>
-      <div class="cta-actions">
-        <a class="btn btn-lg btn-accent" href="contact.html?type=sample">Request Sample <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-        <a class="btn btn-lg btn-outline-light" href="science.html#tds"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Technical Data</a>
+      <div style="background: var(--paper); border: 1px solid var(--border); border-radius: 8px; overflow: hidden;">
+        <div style="display: grid; grid-template-columns: 1.4fr 1fr 1fr;">
+          <div style="padding: 16px 20px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; color: var(--fg-2); border-bottom: 1.5px solid var(--ink); text-transform: uppercase;">Grade</div>
+          <div style="padding: 16px 20px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; color: var(--fg-2); border-bottom: 1.5px solid var(--ink); text-transform: uppercase;">Particle</div>
+          <div style="padding: 16px 20px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; color: var(--fg-2); border-bottom: 1.5px solid var(--ink); text-transform: uppercase;">Pack</div>
+          <sc-for list="{{ grades }}" as="g" hint-placeholder-count="5">
+            <div style="padding: 15px 20px; font-size: 14px; font-weight: 500; border-top: 1px solid var(--ink-08);">{{ g.name }}</div>
+            <div style="padding: 15px 20px; font-family: var(--font-mono); font-size: 13px; color: var(--fg-2); border-top: 1px solid var(--ink-08);">{{ g.size }}</div>
+            <div style="padding: 15px 20px; font-family: var(--font-mono); font-size: 13px; color: var(--fg-2); border-top: 1px solid var(--ink-08);">{{ g.pack }}</div>
+          </sc-for>
+        </div>
       </div>
     </div>
   </div>
-</section>
 
-</main>
-<div id="footer-mount"></div>
+  <!-- CTA -->
+  <div style="position: relative; overflow: hidden; background: radial-gradient(ellipse at 25% 50%, #294C57 0%, #0E3540 72%);">
+    <div style="position: absolute; inset: 0; opacity: 0.5; background: radial-gradient(circle at 85% 30%, rgba(107,163,181,0.25), transparent 45%);"></div>
+    <div style="position: relative; max-width: 1440px; margin: 0 auto; padding: 88px 40px; text-align: center;">
+      <h2 style="font-family: var(--font-serif); font-size: 48px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.05; color: var(--bone); margin: 0 auto 20px; max-width: 760px;">Specifying a custom blend?</h2>
+      <p style="font-size: 17px; color: rgba(247,244,237,0.8); max-width: 560px; margin: 0 auto 32px;">Send your target spec. We'll quote against your tonnage and ship inside 14 days.</p>
+      <div style="display: inline-flex; gap: 14px; flex-wrap: wrap; justify-content: center;">
+        <a href="contact.html" class="btn-ar" style="background: var(--bone); color: var(--ink); height: 52px; padding: 0 28px; border-radius: 4px; font-size: 16px; font-weight: 500; display: inline-flex; align-items: center; border: none;">Request a quote</a>
+        <a href="contact.html" class="btn-ar btn-boneline" style="background: transparent; color: var(--bone); height: 52px; padding: 0 28px; border-radius: 4px; font-size: 16px; font-weight: 500; display: inline-flex; align-items: center; border: 1px solid rgba(247,244,237,0.4);">Order a sample</a>
+      </div>
+    </div>
+  </div>
+
+  <dc-import name="SiteFooter" hint-size="100%,440px"></dc-import>
 </div>
-<script src="script.js"></script>
-<script>
-document.addEventListener("DOMContentLoaded",function(){
-  document.querySelectorAll(".ind-trigger").forEach(function(btn,index){
-    var item=btn.closest(".ind-item");
-    var panel=item.querySelector(".ind-panel");
-    var panelId=panel.id||"industry-panel-"+index;
-    panel.id=panelId;
-    btn.setAttribute("aria-controls",panelId);
-    btn.addEventListener("click",function(){
-      var open = item.classList.contains("open");
-      if(open){ item.classList.remove("open"); btn.setAttribute("aria-expanded","false"); panel.style.maxHeight=null; }
-      else { item.classList.add("open"); btn.setAttribute("aria-expanded","true"); panel.style.maxHeight = panel.scrollHeight+"px"; }
-    });
-  });
-  if(location.hash){
-    var target = document.querySelector(location.hash);
-    if(target && target.classList.contains("ind-item")){ target.querySelector(".ind-trigger").click(); target.scrollIntoView({block:"start"}); }
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      industries: [
+        { title: 'Agriculture', tag: 'ROW CROP · OMRI', body: 'OMRI-listed calcium for pH correction and nutrition. The orthorhombic crystal structure delivers faster availability than calcite, with fine particles that aerate soil and hold moisture.', spec: '≥ 98% CaCO₃', grade: 'AG-CAL', bg: "url('assets/ind-agriculture.jpg') center/cover" },
+        { title: 'Aquarium & aquaculture', tag: 'MARINE', body: 'Gentle alkalinity and pH buffering for recirculating and pond systems, plus bioavailable calcium for shellfish, coral, and reef restoration.', spec: 'pH 8.2 ± 0.1', grade: 'AQ-CAL', bg: "url('assets/ind-aquaculture.jpg') center/cover" },
+        { title: 'Energy', tag: 'ENERGY MATERIALS', body: 'High-purity CaCO₃ precursor for calcium-based intermediates and battery / energy-materials research, backed by a single-origin, traceable supply.', spec: 'Single-origin', grade: 'EN-CAL', bg: "url('assets/ind-energy.jpg') center/cover" },
+        { title: 'Construction', tag: 'CEMENT & CONCRETE', body: 'Fine CaCO₃ filler for clinker substitution, ready-mix, and precast — supporting embodied-carbon reduction and workability in high-performance mixes.', spec: '1.42 g/cm³', grade: 'CN-CAL', bg: "url('assets/ind-construction.jpg') center/cover" },
+        { title: 'Glass', tag: 'BATCH FEED', body: 'Low-iron, optical-grade CaCO₃ for container, flat, solar, and specialty glass. High whiteness and predictable batch chemistry, lot after lot.', spec: '≤ 0.04% Fe₂O₃', grade: 'GL-CAL', bg: "url('assets/ind-glass.jpg') center/cover" },
+        { title: 'Environmental', tag: 'REMEDIATION', body: 'Buffering chemistry for acid mine drainage, calcium amendment for degraded soils and wetlands, and reef-friendly substrate for restoration.', spec: '< 2 ppm Pb', grade: 'EV-CAL', bg: "url('assets/ind-environmental.jpg') center/cover" },
+        { title: 'Ground calcium carbonate', tag: 'GCC FILLER', body: 'Fine-ground and micronized oolitic GCC for plastics, coatings, and paper — high whiteness, low abrasion, and custom particle sizing on request.', spec: 'D₅₀ to spec', grade: 'GCC', bg: "url('assets/ind-gcc.jpg') center/cover" },
+        { title: 'Water treatment', tag: 'MUNICIPAL', body: 'Natural buffering toward neutral, phosphorus capture, and heavy-metal binding — a drop-in alternative to conventional limestone media.', spec: 'pH 8.2 ± 0.1', grade: 'WT-CAL', bg: "url('assets/ind-water.jpg') center/cover" },
+        { title: 'Horticulture', tag: 'TURF & LANDSCAPE', body: 'Moisture-retentive infill for cooler surfaces, plus calcium for healthy root zones across golf greens, sports fields, and premium landscaping.', spec: '0.2–0.5 mm', grade: 'HT-CAL', bg: "url('assets/ind-horticulture.jpg') center/cover" },
+      ],
+      grades: [
+        { name: 'Sand-grade', size: '0.2–0.5 mm', pack: 'Bulk / ton' },
+        { name: 'Granular', size: '0.5–2.0 mm', pack: 'Super-sack' },
+        { name: 'Pelletized', size: '2–4 mm', pack: '50 lb bag' },
+        { name: 'Fine ground', size: '< 0.1 mm', pack: 'Bulk / bag' },
+        { name: 'Custom', size: 'To spec', pack: 'To plan' },
+      ],
+    };
   }
-});
+}
 </script>
 </body>
 </html>

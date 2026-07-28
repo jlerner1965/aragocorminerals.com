@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/aragocor-minerals-design-system-6cd5605f-b1a2-4c76-af9e-ea4efe576a33/colors_and_type.css">
+<script src="_ds/aragocor-minerals-design-system-6cd5605f-b1a2-4c76-af9e-ea4efe576a33/_ds_bundle.js"></script>
+<style>:root{--ink:#0E3540;--tide:#526A70;--shore:#7C97A0;--sand:#D7C59C;--bone:#F7F4ED;--paper:#FFFFFF;--root:#49613C;--leaf:#49613C;--fg-1:#0E3540;--fg-2:#526A70;--fg-3:#8A9AA0;--border:#C7CBC6;--border-strong:#A9B0AC;--ink-04:rgba(14,53,64,0.04);--ink-08:rgba(14,53,64,0.08);--ink-12:rgba(14,53,64,0.12);--ink-20:rgba(14,53,64,0.20);--ink-40:rgba(14,53,64,0.40);--ink-60:rgba(14,53,64,0.60);--ink-80:rgba(14,53,64,0.80);}</style>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bone); }
+  a { border-bottom: none; }
+  .doc-row { transition: background 220ms var(--ease-tide); }
+  .doc-row:hover { background: var(--sand); }
+  .doc-row:hover .dl-icon { color: var(--ink) !important; }
+  .btn-ar { transition: all 220ms var(--ease-tide); cursor: pointer; }
+  .btn-ar:active { transform: scale(0.97); }
+  .btn-bone:hover { background: rgba(247,244,237,0.88) !important; }
+  .btn-boneline:hover { border-color: var(--bone) !important; background: rgba(247,244,237,0.08) !important; }
+</style>
+</helmet>
+
+<div style="font-family: var(--font-sans); color: var(--ink); background: var(--bone); min-height: 100vh;">
+  <dc-import name="SiteNav" active="resources" hint-size="100%,74px"></dc-import>
+
+  <!-- HEADER -->
+  <div style="max-width: 1440px; margin: 0 auto; padding: 88px 40px 40px;">
+    <div style="font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-2);">Technical data &amp; resources</div>
+    <h1 style="font-family: var(--font-serif); font-size: 60px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.04; margin: 16px 0 24px; max-width: 900px;">Every number, methods cited.</h1>
+    <p style="font-size: 19px; line-height: 1.55; max-width: 680px; color: var(--fg-2); margin: 0;">Data sheets, safety documents, certificates of analysis, and application notes for every grade. No proprietary blends, no asterisks — the spec is the spec.</p>
+  </div>
+
+  <!-- SPEC + LIBRARY -->
+  <div style="max-width: 1440px; margin: 0 auto; padding: 24px 40px 64px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+
+    <!-- typical analysis -->
+    <div style="background: var(--ink); border-radius: 8px; padding: 40px; color: var(--bone); position: relative; overflow: hidden;">
+      <div style="position: absolute; inset: 0; background: url('assets/process-qc.jpg') center/cover; opacity: 0.26;"></div>
+      <div style="position: absolute; inset: 0; background: linear-gradient(140deg, rgba(14,53,64,0.92) 0%, rgba(14,53,64,0.78) 100%);"></div>
+      <div style="position: relative;">
+        <div style="font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(247,244,237,0.6); margin-bottom: 8px;">Representative analysis · oolitic aragonite</div>
+        <h2 style="font-family: var(--font-serif); font-size: 28px; font-weight: 600; letter-spacing: -0.015em; color: var(--bone); margin: 0 0 24px;">Every batch ships with its numbers.</h2>
+        <div style="font-family: var(--font-mono); font-size: 14px;">
+          <sc-for list="{{ spec }}" as="s" hint-placeholder-count="14">
+            <div style="display: flex; justify-content: space-between; padding: 14px 0; border-top: 1px solid rgba(247,244,237,0.15);">
+              <span style="color: rgba(247,244,237,0.7);">{{ s.k }}</span>
+              <span style="color: var(--bone);">{{ s.v }}</span>
+            </div>
+          </sc-for>
+        </div>
+        <a href="technical-data-sheet.html" class="btn-ar btn-boneline" style="margin-top: 28px; background: transparent; color: var(--bone); height: 46px; padding: 0 22px; border-radius: 4px; font-size: 14.5px; font-weight: 500; display: inline-flex; align-items: center; border: 1px solid rgba(247,244,237,0.4);">Open the technical data sheet</a>
+      </div>
+    </div>
+
+    <!-- document library -->
+    <div>
+      <div style="font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--fg-2); margin-bottom: 16px;">Document library</div>
+      <div style="background: var(--paper); border: 1px solid var(--border); border-radius: 8px; overflow: hidden;">
+        <sc-for list="{{ docs }}" as="d" hint-placeholder-count="6">
+          <a href="{{ d.href }}" target="_blank" class="doc-row" style="display: flex; align-items: center; gap: 16px; padding: 18px 22px; border-top: 1px solid var(--ink-08); color: var(--ink);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--tide)" stroke-width="1.5" style="flex-shrink:0;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+            <div style="flex: 1;">
+              <div style="font-size: 15px; font-weight: 500;">{{ d.name }}</div>
+              <div style="font-family: var(--font-mono); font-size: 11.5px; color: var(--fg-2); letter-spacing: 0.02em;">{{ d.meta }}</div>
+            </div>
+            <svg class="dl-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--fg-3)" stroke-width="1.5" style="flex-shrink:0; transition: color 220ms var(--ease-tide);"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 21h16" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+
+  <!-- ARAGONITE VS LIME -->
+  <div style="background: var(--paper); border-top: 1px solid var(--ink-08); border-bottom: 1px solid var(--ink-08);">
+    <div style="max-width: 1440px; margin: 0 auto; padding: 88px 40px;">
+      <div style="display: grid; grid-template-columns: 1fr 1.4fr; gap: 72px; align-items: flex-start;">
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-2);">Head-to-head</div>
+          <h2 style="font-family: var(--font-serif); font-size: 40px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.1; margin: 14px 0 20px;">Aragonite vs. dolomitic lime.</h2>
+          <p style="font-size: 15.5px; line-height: 1.65; color: var(--fg-2); margin: 0;">Limestone is mined and ground. Aragonite is precipitated by living oceans and harvested gently. The difference shows up in dissolution rate, the pH ceiling, and the magnesium-to-calcium ratio your crop actually wants.</p>
+        </div>
+        <table style="width: 100%; border-collapse: collapse;">
+          <thead>
+            <tr>
+              <th style="text-align: left; padding: 0 14px 14px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; color: var(--fg-2); border-bottom: 1.5px solid var(--ink);"></th>
+              <th style="text-align: left; padding: 0 14px 14px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; color: var(--ink); border-bottom: 1.5px solid var(--ink);">ARAGOCOR ARAGONITE</th>
+              <th style="text-align: left; padding: 0 14px 14px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; color: var(--fg-2); border-bottom: 1.5px solid var(--ink);">DOLOMITIC LIME</th>
+            </tr>
+          </thead>
+          <tbody>
+            <sc-for list="{{ compare }}" as="c" hint-placeholder-count="7">
+              <tr>
+                <td style="padding: 16px 14px; font-size: 14.5px; font-weight: 500; border-top: 1px solid var(--ink-08);">{{ c.k }}</td>
+                <td style="padding: 16px 14px; font-family: var(--font-mono); font-size: 14px; color: var(--ink); border-top: 1px solid var(--ink-08); background: rgba(107,143,71,0.07);">{{ c.ours }}</td>
+                <td style="padding: 16px 14px; font-family: var(--font-mono); font-size: 14px; color: var(--fg-2); border-top: 1px solid var(--ink-08);">{{ c.theirs }}</td>
+              </tr>
+            </sc-for>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- APPLICATION RATES -->
+  <div style="max-width: 1440px; margin: 0 auto; padding: 88px 40px;">
+    <div style="font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-2);">Application</div>
+    <h2 style="font-family: var(--font-serif); font-size: 40px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.1; margin: 14px 0 12px; max-width: 640px;">Rate tables by use case.</h2>
+    <p style="font-size: 15.5px; line-height: 1.6; color: var(--fg-2); margin: 0 0 40px; max-width: 560px;">Because aragonite buffers on demand, windows are forgiving. Starting rates below; full tables by crop and soil class in the application guide.</p>
+    <div style="background: var(--paper); border: 1px solid var(--border); border-radius: 8px; overflow: hidden;">
+      <div style="display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr;">
+        <div style="padding: 16px 22px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; color: var(--fg-2); text-transform: uppercase; border-bottom: 1.5px solid var(--ink);">Use case</div>
+        <div style="padding: 16px 22px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; color: var(--fg-2); text-transform: uppercase; border-bottom: 1.5px solid var(--ink);">Rate</div>
+        <div style="padding: 16px 22px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; color: var(--fg-2); text-transform: uppercase; border-bottom: 1.5px solid var(--ink);">Timing</div>
+        <div style="padding: 16px 22px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; color: var(--fg-2); text-transform: uppercase; border-bottom: 1.5px solid var(--ink);">Grade</div>
+        <sc-for list="{{ rates }}" as="r" hint-placeholder-count="5">
+          <div style="padding: 16px 22px; font-size: 14.5px; font-weight: 500; border-top: 1px solid var(--ink-08);">{{ r.use }}</div>
+          <div style="padding: 16px 22px; font-family: var(--font-mono); font-size: 13.5px; color: var(--ink); border-top: 1px solid var(--ink-08);">{{ r.rate }}</div>
+          <div style="padding: 16px 22px; font-family: var(--font-mono); font-size: 13.5px; color: var(--fg-2); border-top: 1px solid var(--ink-08);">{{ r.timing }}</div>
+          <div style="padding: 16px 22px; font-family: var(--font-mono); font-size: 13.5px; color: var(--tide); border-top: 1px solid var(--ink-08);">{{ r.grade }}</div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div style="position: relative; overflow: hidden; background: radial-gradient(ellipse at 25% 50%, #294C57 0%, #0E3540 72%);">
+    <div style="position: relative; max-width: 1440px; margin: 0 auto; padding: 80px 40px; display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap;">
+      <div>
+        <h2 style="font-family: var(--font-serif); font-size: 38px; font-weight: 600; letter-spacing: -0.015em; color: var(--bone); margin: 0 0 8px;">Need a document that isn't here?</h2>
+        <p style="font-size: 16px; color: rgba(247,244,237,0.8); margin: 0;">Our technical team can pull a lot-specific COA or a custom spec sheet on request.</p>
+      </div>
+      <a href="contact.html" class="btn-ar btn-bone" style="background: var(--bone); color: var(--ink); height: 52px; padding: 0 28px; border-radius: 4px; font-size: 16px; font-weight: 500; display: inline-flex; align-items: center; border: none;">Contact technical support</a>
+    </div>
+  </div>
+
+  <dc-import name="SiteFooter" hint-size="100%,440px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      spec: [
+        { k: 'CaCO₃', v: '97.8%' }, { k: 'MgCO₃', v: '≤ 0.9%' },
+        { k: 'SiO₂', v: '≤ 0.6%' }, { k: 'Fe₂O₃', v: '≤ 0.04%' },
+        { k: 'Al₂O₃', v: '≤ 0.10%' }, { k: 'Na₂O + K₂O', v: '≤ 0.30%' },
+        { k: 'Loss on ignition', v: '~ 43%' }, { k: 'Specific gravity', v: '2.93' },
+        { k: 'Whiteness', v: '92–94 (ISO)' }, { k: 'Hardness', v: '3.5–4.0 Mohs' },
+        { k: 'Moisture', v: '< 0.3% as shipped' }, { k: 'Surface area', v: '1.0–2.5 m²/g' },
+        { k: 'Crystal system', v: 'Orthorhombic' }, { k: 'Available sizing', v: '20–325 U.S. mesh' },
+      ],
+      docs: [
+        { name: 'Technical data sheet — oolitic aragonite', meta: 'Rev 2026.1 · view & save as PDF', href: 'technical-data-sheet.html' },
+        { name: 'Aragonite vs. limestone — technical brief', meta: 'PDF · Available now', href: 'assets/docs/aragonite-vs-limestone-technical-brief.pdf' },
+        { name: 'Glass batch chemistry with aragonite', meta: 'PDF · Available now', href: 'assets/docs/glass-batch-chemistry-with-aragonite.pdf' },
+        { name: 'Safety data sheet (SDS)', meta: 'PDF · On request · GHS format', href: 'contact.html' },
+        { name: 'Certificate of analysis — current lot', meta: 'PDF · On request', href: 'contact.html' },
+        { name: 'Particle sizing — 20 to 325 U.S. mesh', meta: 'PDF · On request', href: 'contact.html' },
+      ],
+      compare: [
+        { k: 'Mineral form', ours: 'Aragonite (orthorhombic)', theirs: 'Calcite + dolomite' },
+        { k: 'CaCO₃ purity', ours: '≥ 98.4%', theirs: '50–60% (Ca eq.)' },
+        { k: 'pH ceiling', ours: '8.2 — soft buffer', theirs: '9.0+ — hard spike' },
+        { k: 'Mg load', ours: '0.6% — clean', theirs: '20%+ — competes with K' },
+        { k: 'Dissolution', ours: 'Demand-driven', theirs: 'Slow, indiscriminate' },
+        { k: 'Origin', ours: 'Ocean-precipitated', theirs: 'Mined, kilned' },
+        { k: 'Trace minerals', ours: 'Marine chelates', theirs: 'Quarry overburden' },
+      ],
+      rates: [
+        { use: 'Raised bed / vegetable', rate: '1 cup / 4 sq ft', timing: 'Bed turnover', grade: 'RB-CAL' },
+        { use: 'Row crop (broadcast)', rate: '400–800 lb / acre', timing: 'Pre-plant', grade: 'AG-CAL' },
+        { use: 'Established turf', rate: '10–20 lb / 1000 sq ft', timing: 'Top-dress', grade: 'TF-CAL' },
+        { use: 'Coco / peat media', rate: '5–10% v/v', timing: 'At mix', grade: 'CB-CAL' },
+        { use: 'Water remineralization', rate: 'Per flow spec', timing: 'Continuous', grade: 'WT-CAL' },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>
